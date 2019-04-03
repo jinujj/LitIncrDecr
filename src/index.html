@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lit Increment Decrement</title>
+</head>
+<style>
+    .main-container {
+        display: flex;
+        border: solid 1px grey;
+    }
+    .main-container lit-combo + lit-combo {
+        border-left:solid 1px grey;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <lit-combo  value=4 label="Increment Decrement Only Positive numbers" property="first"> </lit-combo>
+        <lit-combo  negative=true label="Increment Decrement including Negative numbers" property="second"> </lit-combo>
+    </div>
+</body>
+</html>
